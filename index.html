@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <ul>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </nav>
+    <section id="welcome-section">
+      <h1>Garrett Hensley</h1>
+      <h2>Web Developer</h2>
+      <p>
+        <a
+          id="profile-link"
+          href="https://github.com/garrettHensley"
+          target="_blank"
+          >Github</a
+        >
+      </p>
+    </section>
+    <section id="projects">
+      <div class="project-tile">
+        <h1>Marveldb</h1>
+        <p>
+          I created a web app using Vue and bootstrap, that gathers data from a
+          Marvel API. Search for heroes and villains, and their comics.
+        </p>
+        <a href="https://github.com/garrettHensley/marvel-db"
+          ><button>Source</button></a
+        >
+      </div>
+      <div class="project-tile">
+        <h1>Vue Todo</h1>
+        <p>
+          A CRUD(Create, read, update, delete) app for tasks to do, created with
+          Vue and Bootstrap.
+        </p>
+        <a href="https://github.com/garrettHensley/vue-todo-2"
+          ><button>Source</button></a
+        >
+      </div>
+    </section>
+  </body>
+</html>
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+  html body {
+    font-family: "Noto Sans JP", sans-serif;
+    background-color: #f6c73f;
+  }
+  li {
+    list-style-type: none;
+    display: inline;
+  }
+  a {
+    text-decoration: none;
+  }
+  a:visited {
+  }
+  nav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: #9dc2c7;
+  }
+  nav a,
+  nav a:visited {
+    color: #3d4659 !important;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  #welcome-section {
+    height: 61.3vh;
+    background: #3d4659;
+    color: #f6c73f;
+    text-align: center;
+    padding: 10em;
+  }
+  #welcome-section h1,
+  #welcome-section h2,
+  #welcome-section h3,
+  #welcome-section h4,
+  #welcome-section a {
+    font-weight: 100;
+  }
+  #welcome-section h1 {
+    font-size: 8em;
+    margin-bottom: 0;
+  }
+  #welcome-section h2 {
+    font-size: 3.5em;
+    margin: 0;
+  }
+  #welcome-section a {
+    font-size: 3em;
+    color: #f6c73f;
+  }
+
+  #projects {
+    width: 75%;
+    margin-top: 1em !important;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .project-tile {
+    background-color: white;
+    padding: 3em;
+    margin: 1em;
+    max-width: 20em;
+    position: relative;
+  }
+  .project-tile a {
+    position: absolute;
+    bottom: 0;
+    color: #9dc2c7;
+    font-size: 1.2em;
+    font-weight: bolder;
+  }
+  button {
+    background-color: #9dc2c7;
+    font-size: 1em;
+    border: none;
+    border-radius: 0.2em;
+    padding: 0.3em;
+    margin-bottom: 0.3em;
+  }
+
+  @media only screen and (max-width: 600px) {
+    #welcome-section {
+      padding: 0;
+      padding-top: 4em;
+      margin-top: 5em !important;
+      width: 100%;
+    }
+    #welcome-section h1 {
+      font-size: 2em;
+    }
+    #projects {
+      width: 100%;
+      display: block;
+    }
+    .project-tile {
+    }
+  }
+</style>
